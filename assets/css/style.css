@@ -25,9 +25,30 @@
 .ui-menu-color-download {
     background-color: #525252;
 }
-/*--------------------------------------------Special paddings/margins/text */
 
-h1,h2,h3,h4 {
+.row-table {
+    display: table;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+/* ----------------------------------------Special paddings/margins/text */
+
+h1,
+h2,
+h3,
+h4 {
     margin: 0;
 }
 
@@ -73,7 +94,7 @@ header {
 }
 
 .logo {
-    background: url("../images/rosie.png");
+    background: url("../images/rosie.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,7 +121,6 @@ header {
     color: #fff;
 }
 
-
 .list-inline-item:not(:last-child) {
     margin: 0;
 }
@@ -109,13 +129,13 @@ header {
     font-size: 0;
 }
 
-#nav {
-    margin: 0;
-}
-
 #nav li {
     font-size: 14px;
     padding: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 .menuitem {
@@ -149,14 +169,14 @@ header {
     letter-spacing: 2px;
 }
 
-/*--------------------------------------------Hover.css */
+/*--------------------------------------------Hover.css*/
 
 .hvr-sweep-to-bottom:before {
-    background-color: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
     height: 120px;
 }
 
-/*-------------------------------------------- Footer */ 
+/* ----------------------------------------Footer */
 
 footer {
     background-color: #525252;
@@ -189,10 +209,11 @@ footer {
     height: 32px;
     padding: 12px 0;
     border-radius: 50%;
-    font: 13px;
+    font-size: 13px;
     line-height: 7px;
     text-align: center;
     color: #fafafa;
+    background: #8f8f8f;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -200,9 +221,20 @@ footer {
 }
 
 .social-links li a i:hover {
-    background-color: #e84610;
+    background: #e84610;
 }
 
 #footer-details {
     padding: 20px;
+}
+
+/* ----------------------------------------Three Reasons */
+
+.three-reasons-icon {
+    font-size: 26px;
+    color: #e67e22;
+}
+
+.three-reasons-heading {
+    margin-bottom: 15px;
 }
